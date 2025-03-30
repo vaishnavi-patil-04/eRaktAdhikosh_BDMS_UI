@@ -1,0 +1,30 @@
+<!-- register.component.html -->
+<div class="register-container">
+    <div class="register-card">
+      <h2>Registration Type</h2>
+      <p>Please select your registration type:</p>
+      
+      <div class="registration-options">
+        <div class="option-card" (click)="navigateToRegistration('donor')">
+          <div class="option-icon">
+            <!-- You can add an icon library like FontAwesome via CDN -->
+            <span>👤</span> <!-- Using an emoji as fallback -->
+          </div>
+          <h3>Register as Donor</h3>
+          <p>I want to donate blood and save lives</p>
+        </div>
+        
+        <div class="option-card" (click)="navigateToRegistration('organization')">
+          <div class="option-icon">
+            <span>🏥</span> <!-- Using an emoji as fallback -->
+          </div>
+          <h3>Register as Organization</h3>
+          <p>We are a blood bank or medical institution</p>
+        </div>
+      </div>
+      
+      <div class="back-link">
+        <a [routerLink]="['/login']">Back to Login</a>
+      </div>
+    </div>
+  </div>

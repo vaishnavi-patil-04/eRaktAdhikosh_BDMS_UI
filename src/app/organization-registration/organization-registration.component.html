@@ -1,0 +1,199 @@
+<!-- organization-registration.component.html -->
+<div class="registration-container">
+    <div class="registration-card">
+      <h2>Organization Registration</h2>
+      
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="orgName">Organization Name</label>
+            <input 
+              type="text" 
+              id="orgName" 
+              formControlName="orgName" 
+              placeholder="Enter organization name"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('orgName')?.invalid && registrationForm.get('orgName')?.touched">
+              Organization name is required
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="orgType">Organization Type</label>
+            <select id="orgType" formControlName="orgType">
+              <option value="">Select Organization Type</option>
+              <option *ngFor="let type of organizationTypes" [value]="type">{{type}}</option>
+            </select>
+            <div class="error-message" *ngIf="registrationForm.get('orgType')?.invalid && registrationForm.get('orgType')?.touched">
+              Please select organization type
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="licenseNumber">License Number</label>
+            <input 
+              type="text" 
+              id="licenseNumber" 
+              formControlName="licenseNumber" 
+              placeholder="Enter license/registration number"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('licenseNumber')?.invalid && registrationForm.get('licenseNumber')?.touched">
+              License number is required
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contactPerson">Contact Person Name</label>
+            <input 
+              type="text" 
+              id="contactPerson" 
+              formControlName="contactPerson" 
+              placeholder="Enter contact person name"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('contactPerson')?.invalid && registrationForm.get('contactPerson')?.touched">
+              Contact person name is required
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              formControlName="email" 
+              placeholder="Enter official email"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched">
+              Please enter a valid email
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              formControlName="phone" 
+              placeholder="Enter phone number"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('phone')?.invalid && registrationForm.get('phone')?.touched">
+              Please enter a valid 10-digit phone number
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input 
+              type="password" 
+              id="password" 
+              formControlName="password" 
+              placeholder="Create a password"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched">
+              Password must be at least 6 characters
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input 
+              type="password" 
+              id="confirmPassword" 
+              formControlName="confirmPassword" 
+              placeholder="Confirm password"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('confirmPassword')?.value !== registrationForm.get('password')?.value && registrationForm.get('confirmPassword')?.touched">
+              Passwords do not match
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group full-width">
+          <label for="address">Address</label>
+          <input 
+            type="text" 
+            id="address" 
+            formControlName="address" 
+            placeholder="Enter organization address"
+          >
+          <div class="error-message" *ngIf="registrationForm.get('address')?.invalid && registrationForm.get('address')?.touched">
+            Address is required
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input 
+              type="text" 
+              id="city" 
+              formControlName="city" 
+              placeholder="City"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('city')?.invalid && registrationForm.get('city')?.touched">
+              City is required
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="state">State</label>
+            <input 
+              type="text" 
+              id="state" 
+              formControlName="state" 
+              placeholder="State"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('state')?.invalid && registrationForm.get('state')?.touched">
+              State is required
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="pincode">PIN Code</label>
+            <input 
+              type="text" 
+              id="pincode" 
+              formControlName="pincode" 
+              placeholder="PIN Code"
+            >
+            <div class="error-message" *ngIf="registrationForm.get('pincode')?.invalid && registrationForm.get('pincode')?.touched">
+              Please enter a valid 6-digit PIN code
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group full-width">
+          <label for="website">Website (Optional)</label>
+          <input 
+            type="url" 
+            id="website" 
+            formControlName="website" 
+            placeholder="Enter organization website"
+          >
+        </div>
+        
+        <div class="form-group checkbox-group">
+          <input 
+            type="checkbox" 
+            id="agreeTerms" 
+            formControlName="agreeTerms"
+          >
+          <label for="agreeTerms">I agree to the terms and conditions</label>
+          <div class="error-message" *ngIf="registrationForm.get('agreeTerms')?.invalid && registrationForm.get('agreeTerms')?.touched">
+            You must agree to the terms and conditions
+          </div>
+        </div>
+        
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" (click)="goBack()">Back</button>
+          <button type="submit" class="btn btn-primary" [disabled]="registrationForm.invalid">Register</button>
+        </div>
+      </form>
+    </div>
+  </div> 

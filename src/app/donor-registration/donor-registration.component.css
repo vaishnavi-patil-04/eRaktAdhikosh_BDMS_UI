@@ -1,134 +1,112 @@
-/* This CSS can be used for both donor-registration.component.css and organization-registration.component.css */
-
 .registration-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to right, #ff0000, #ffff00);
-    padding: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
   
+  /* Background Image Settings */
+  background: url('/assets/backgroundimg4.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image always covers the screen */
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+}
+
+
+.registration-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px; /* Adjusted width for better spacing */
+}
+
+h2 {
+  color: #d01c31;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Stack Fields Vertically */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; /* Adds space between fields */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #d01c31;
+  outline: none;
+}
+
+/* Adjust Textarea Size */
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #d01c31;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #b0152a;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+/* Mobile-Friendly */
+@media (max-width: 600px) {
   .registration-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 100%;
-    max-width: 800px;
+      max-width: 100%;
+      padding: 20px;
   }
-  
-  h2 {
-    color: #d01c31;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
-  }
-  
-  .form-group {
-    padding: 0 10px;
-    margin-bottom: 20px;
-    flex: 1 0 calc(50% - 20px);
-  }
-  
-  .full-width {
-    flex: 1 0 100%;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  input, select {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  input:focus, select:focus {
-    border-color: #d01c31;
-    outline: none;
-  }
-  
-  .error-message {
-    color: #d01c31;
-    font-size: 12px;
-    margin-top: 4px;
-  }
-  
-  .checkbox-group {
-    display: flex;
-    align-items: center;
-  }
-  
-  .checkbox-group input {
-    width: auto;
-    margin-right: 10px;
-  }
-  
-  .checkbox-group label {
-    margin-bottom: 0;
-  }
-  
-  .form-actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  
+
   .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-primary {
-    background-color: #d01c31;
-    color: white;
-  }
-  
-  .btn-primary:hover {
-    background-color: #b0152a;
-  }
-  
-  .btn-primary:disabled {
-    background-color: #e6a1a9;
-    cursor: not-allowed;
-  }
-  
-  .btn-secondary {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #e0e0e0;
-  }
-  
-  @media (max-width: 768px) {
-    .form-group {
-      flex: 1 0 100%;
-    }
-    
-    .form-actions {
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    .btn {
       width: 100%;
-    }
   }
+}

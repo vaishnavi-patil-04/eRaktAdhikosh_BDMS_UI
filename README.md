@@ -67,6 +67,13 @@ src/
 
 ---
 
+---
+
+## 🔗 Related Repositories
+
+* [eRaktAdhikosh Services (Spring Boot)](https://github.com/vaishnavi-patil-04/eRaktAdhikosh_BDMS_Service)
+
+
 ## 🤝 Contributors
 
 * **Vaishnavi Patil** 
@@ -74,5 +81,6 @@ src/
 * Vagisha Sharma 
 
 ---
+
 
 

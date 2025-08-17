@@ -1,115 +1,3 @@
-<<<<<<< HEAD
-# BBankUi
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-
-# BBankUi
-
-This project was generated using Angular CLI version 19.1.8.
-
-## Development server
-
-To start a local development server, run:
-
-    ng serve
-
-Once the server is running, open your browser and navigate to http://localhost:4200/. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-    ng generate component component-name
-
-For a complete list of available schematics (such as components, directives, or pipes), run:
-
-    ng generate --help
-
-## Building
-
-To build the project run:
-
-    ng build
-
-This will compile your project and store the build artifacts in the dist/ directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the Karma test runner, use the following command:
-
-    ng test
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-    ng e2e
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the Angular CLI Overview and Command Reference page.
-
-# ERaktAdhikosh_BDMS
-
-Sure — I’ll draft a professional README for your **eRaktAdhikosh\_BDMS\_UI** project. Since it’s your **Angular frontend** for the Blood Bank Management System, I’ll structure it so interviewers and GitHub viewers see it as polished and easy to follow.
-
----
-
 # eRaktAdhikosh – Blood Bank Management System (UI)
 
 This repository contains the **frontend** of *eRaktAdhikosh*, a Blood Bank Management System built with **Angular**. It provides a user-friendly interface for managing blood donations, donors, recipients, and organizations, enabling smoother coordination between blood banks and hospitals.
@@ -181,11 +69,16 @@ src/
 
 ## 🤝 Contributors
 
-* **Vaishnavi Patil** – Frontend Developer (Angular)
-* Backend developed with **Spring Boot** & **MySQL** integration
+* **Vaishnavi Patil** 
+* Vaishnavi Tathe
+* Vagisha Sharma 
 
 ---
 
+## 📜 License
 
+This project is licensed under the MIT License.
 
+---
 
+Do you want me to **keep this README lightweight** (for interviews, highlighting only UI + integration), or should I make it **more detailed with API references, Swagger integration, and technical depth** (so you can talk about it during interviews)?

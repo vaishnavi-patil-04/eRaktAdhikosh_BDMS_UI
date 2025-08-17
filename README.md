@@ -75,10 +75,4 @@ src/
 
 ---
 
-## 📜 License
 
-This project is licensed under the MIT License.
-
----
-
-Do you want me to **keep this README lightweight** (for interviews, highlighting only UI + integration), or should I make it **more detailed with API references, Swagger integration, and technical depth** (so you can talk about it during interviews)?
